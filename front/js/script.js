@@ -6,7 +6,7 @@ fetch('http://localhost:3000/api/products')
         data.forEach(Kanap => {
 
             // Déclaration des variables (contenu de l'API)
-            const { imageUrl, _id, name, description, price } = Kanap
+            const { imageUrl, _id, name, description, price, altText } = Kanap
 
             // Récuperation de l'element du DOM qui accueillera les fiches
             const items = document.querySelector("#items")
@@ -50,6 +50,7 @@ fetch('http://localhost:3000/api/products')
     }
     );
 
+    
 
 
 
